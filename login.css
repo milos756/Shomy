@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 0.7em;
+}
+
+::-webkit-scrollbar-track{
+    margin-block: 10px;
+    background: transparent;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #173a36;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #1D4741;
+}
+
+
+
+/* HEADER */
+
+header{
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background: #1D4743;
+    display: flex;
+    flex-direction: row;
+}
+
+header .logo img{
+    padding: 0 0 0 10px;
+    max-height: 70px;
+}
+
+header .logo{
+    display: flex;
+}
+
+header .logo h2{
+    color: #fff;
+    font-size: 30px;
+    margin: 10px 0 0 10px;
+    font-family: 'Poppins';
+}
+
+header ul{
+    top: 20px;
+    position: absolute;
+    right: 120px;
+    display: flex;
+}
+
+header ul li{
+    margin-right: 40px;
+    list-style: none;
+}
+
+header ul li a{
+    font-family: 'Poppins';
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+header ul li::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    margin-top: 30px;
+    height: 2.4px;
+    background: #fff;
+    transition: .7s;
+}
+
+header ul li:hover::before{
+    width: 70px;
+    transition: .3s;
+}
+
+/* TALASI */
+
+.custom-shape-divider-top-1679172798 {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1679172798 svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1679172798 .shape-fill {
+    fill: #1D4743;
+}
+
+/* HERO-SECTION */
+
+.hero-section{
+    height: 900px;
+    background-image: url("./main-backgorund.jpg");
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.hero-section .hero-image img{
+    max-height: 500px;
+}
+
+.hero-section .hero-title{
+    background: rgba(51, 51, 51, 0.822);
+    margin-top: 250px;
+    font-weight: 900;
+    max-height: 300px;
+    text-align: right;
+    position: absolute;
+    right: 150px;
+}
+
+.hero-section .hero-title h1{
+    padding: 50px 20px;
+    font-size: 45px;
+    font-family: 'Poppins';
+    text-transform: capitalize;
+    color: #fff;
+}
+
+/* CHOOSE-SECTION */
+
+.choose-section{
+    padding-bottom: 100px;
+    background-color: rgb(221, 221, 221);
+}
+
+.choose-section .text-window{
+    display: grid;
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.choose-section h4{
+    z-index: 2 !important;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 30px;
+    padding: 120px 0 100px 0;
+}
+
+.choose-section h4::before{
+    content: '';
+    z-index: 0;
+    position: absolute;
+    width: 38%;
+    left: 35%;
+    margin-top: 33px;
+    height: 12px;
+    background: #5A534B;
+    transition: .7s;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.choose-section .text-window .text{
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    font-family: 'Poppins';
+    text-align: left;
+    font-size: 20px;
+}
+
+.choose-section .text-window .text:first-child{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.choose-section .text-window .text:last-child{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#callender{
+
+    max-height: 150px;
+    margin-top: -20px
+}
+
+#apartman{
+    max-height: 150px;
+    margin-top: -20px
+}
+
+#administration{
+    max-height: 150px;
+    margin-top: -20px
+}
+
+/* FOOTER */
+.custom-shape-divider-bottom-1679173258 {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679173258 svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-bottom-1679173258 .shape-fill {
+    fill: rgb(221, 221, 221);
+}
+
+footer{
+    position: relative;
+    bottom: 1px;
+    height: 50px;
+    width: 100%;
+    background-color: #132e2b;
+}
